@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İstatistikler</h2>
+
+<br />
+<div class="card-deck">
+    <div class="card text-white bg-cyan mb-4 " style="max-width: 20rem;">
+        <div class="card-header">SORU 1</div>
+        <div class="card-body">
+            <h5 class="card-title">Toplam Kategori Sayısı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.ToplamKategori</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-fuchsia mb-4 " style="max-width: 20rem;">
+        <div class="card-header">SORU 2</div>
+        <div class="card-body">
+            <h5 class="card-title">Yazılım Kategorisi Başlık Sayısı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.YazilimBaslikSayisi</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-gradient-blue mb-4 " style="max-width: 20rem; ">
+        <div class="card-header">SORU 3</div>
+        <div class="card-body">
+            <h5 class="card-title">Yazarların İsimlerinde "a" Harfi Bulunanlar</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.AHarfliYazarSayisi</h5>
+        </div>
+    </div>
+</div>
+<div class="card-deck">
+    <div class="card text-white bg-gradient-pink mb-6 " style="max-width: 20rem;">
+        <div class="card-header">SORU 4</div>
+        <div class="card-body">
+            <h5 class="card-title">En Fazla Başlığı Olan Kategori Adı</h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.EnFazlaBaslikKategori</h5>
+        </div>
+    </div>
+    <div class="card text-white bg-green mb-6 " style="max-width: 20rem;">
+        <div class="card-header">SORU 5</div>
+        <div class="card-body">
+            <h5 class="card-title">Kategoriler Tablosunda T/F Farkı </h5>
+            <br />
+            <h5 class="card-text"> @ViewBag.KategoriFarki</h5>
+        </div>
+    </div>
+</div>
